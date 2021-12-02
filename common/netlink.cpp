@@ -93,6 +93,10 @@ uint64_t NetLink::readData()
             SWSS_LOG_ERROR("netlink reports out of memory on reading a netlink socket. High possibility of a lost message");
         else if (err == -NLE_AGAIN)
             SWSS_LOG_DEBUG("netlink reports NLE_AGAIN on reading a netlink socket");
+        else if (err == -NLE_BUSY)
+            SWSS_LOG_NOTICE("netlink reports NLE_BUSY on reading a netlink socket");
+        else if (err == -NLE_DUMP_INTR)
+            SWSS_LOG_NOTICE("netlink reports NLE_DUMP_INTR on reading a netlink socket");
         else
             SWSS_LOG_ERROR("netlink reports an error=%d on reading a netlink socket", err);
     }
