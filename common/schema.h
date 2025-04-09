@@ -155,6 +155,8 @@ namespace swss {
 #define APP_DASH_ROUTE_RULE_TABLE_NAME      "DASH_ROUTE_RULE_TABLE"
 #define APP_DASH_VNET_MAPPING_TABLE_NAME    "DASH_VNET_MAPPING_TABLE"
 
+#define APP_SAG_TABLE_NAME                  "SAG_TABLE"
+
 /***** TO BE REMOVED *****/
 
 #define APP_TC_TO_QUEUE_MAP_TABLE_NAME  "TC_TO_QUEUE_MAP_TABLE"
@@ -435,6 +437,8 @@ namespace swss {
 
 #define CFG_FLOW_COUNTER_ROUTE_PATTERN_TABLE_NAME   "FLOW_COUNTER_ROUTE_PATTERN"
 #define CFG_LOGGER_TABLE_NAME                       "LOGGER"
+
+#define CFG_SAG_TABLE_NAME                          "SAG"
 
 /***** STATE DATABASE *****/
 
