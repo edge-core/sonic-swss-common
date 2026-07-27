@@ -58,6 +58,11 @@ public:
         return m_priority;
     }
 
+    void setPri(int pri)
+    {
+        m_priority = pri;
+    }
+
 private:
 
     friend class Select;
